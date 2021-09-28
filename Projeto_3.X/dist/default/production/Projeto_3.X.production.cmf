@@ -1,0 +1,1701 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.o
+idloc IDLOC 5 200000 200000 8 1
+init CODE 0 E E 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 4 300000 300000 E 1
+$dist/default/production\Projeto_3.X.production.o
+cinit CODE 0 3A22 3A22 26 1
+idloc IDLOC 5 200000 200000 8 1
+intcode_body CODE 0 31C8 31C8 BE 1
+text0 CODE 0 3286 3286 B4 1
+text1 CODE 0 3822 3822 3A 1
+text2 CODE 0 375A 375A 44 1
+text3 CODE 0 34F6 34F6 60 1
+text4 CODE 0 393A 393A 34 1
+text5 CODE 0 39A2 39A2 2C 1
+text6 CODE 0 396E 396E 34 1
+text7 CODE 0 3A94 3A94 14 1
+text9 CODE 0 2DC6 2DC6 D8 1
+text10 CODE 0 37E2 37E2 40 1
+text11 CODE 0 35B6 35B6 5E 1
+text12 CODE 0 39CE 39CE 2A 1
+text13 CODE 0 39F8 39F8 2A 1
+text14 CODE 0 3A48 3A48 26 1
+text15 CODE 0 3670 3670 52 1
+text16 CODE 0 3494 3494 62 1
+text17 CODE 0 1944 1944 460 1
+text18 CODE 0 2E9E 2E9E D6 1
+text19 CODE 0 82C 82C C58 1
+text20 CODE 0 3556 3556 60 1
+text21 CODE 0 385C 385C 38 1
+text22 CODE 0 3614 3614 5C 1
+text23 CODE 0 303E 303E C6 1
+text24 CODE 0 3904 3904 36 1
+text25 CODE 0 379E 379E 44 1
+text26 CODE 0 2F74 2F74 CA 1
+text27 CODE 0 3AA8 3AA8 2 1
+text28 CODE 0 2568 2568 212 1
+text29 CODE 0 2CC8 2CC8 FE 1
+text30 CODE 0 2ABE 2ABE 106 1
+text31 CODE 0 3714 3714 46 1
+text32 CODE 0 1484 1484 4C0 1
+text33 CODE 0 3894 3894 38 1
+text34 CODE 0 1DA4 1DA4 42A 1
+text35 CODE 0 2BC4 2BC4 104 1
+text36 CODE 0 33EA 33EA AA 1
+text37 CODE 0 21CE 21CE 39A 1
+text38 CODE 0 333A 333A B0 1
+text39 CODE 0 3104 3104 C4 1
+text40 CODE 0 292E 292E 190 1
+text41 CODE 0 36C2 36C2 52 1
+text42 CODE 0 38CC 38CC 38 1
+text43 CODE 0 3A6E 3A6E 26 1
+text44 CODE 0 277A 277A 1B4 1
+cstackCOMRAM COMRAM 1 1 1 5D 1
+cstackBANK0 BANK0 1 60 60 5A 1
+cstackBANK1 BANK1 1 1D0 1D0 B 1
+temp COMRAM 1 5E 5E 1 1
+bssBANK0 BANK0 1 BA BA 24 1
+bssBANK1 BANK1 1 100 100 D0 1
+intcode CODE 0 8 8 6 1
+smallconst SMALLCONST 0 800 800 2C 1
+config CONFIG 4 300000 300000 E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM DE-FF 1
+RAM 1DB-7FF 1
+SFR F60-FFF 1
+BANK0 DE-FF 1
+BANK1 1DB-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-7 1
+CONST 12-7FF 1
+CONST 3AAA-7FFF 1
+STACK 1DB-7FF 1
+SMALLCONST 3AAA-7FFF 1
+CODE 4-7 1
+CODE 12-7FF 1
+CODE 3AAA-7FFF 1
+BIGRAM 5F-5F 1
+BIGRAM DE-FF 1
+BIGRAM 1DB-7FF 1
+COMRAM 5F-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 3AAA-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Projeto_3.X.production.o
+8 intcode CODE >2801:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+8 intcode CODE >77:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+277A text44 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+277C text44 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+279A text44 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+27CC text44 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+27D0 text44 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+27D0 text44 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+27E0 text44 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+27F6 text44 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+280A text44 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+280E text44 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2812 text44 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2814 text44 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+281E text44 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2850 text44 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2852 text44 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+285E text44 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2868 text44 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2868 text44 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+289A text44 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+289C text44 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+28A6 text44 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+28C4 text44 CODE >37:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+28D2 text44 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+28D4 text44 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+28D8 text44 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+28FC text44 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+291A text44 CODE >42:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+291C text44 CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+292C text44 CODE >44:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+3A6E text43 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+3A6E text43 CODE >37:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+3A7A text43 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+3A82 text43 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+3A8A text43 CODE >52:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+3A92 text43 CODE >53:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+38CC text42 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+38CC text42 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+3902 text42 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+36C2 text41 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+36C2 text41 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+3712 text41 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+292E text40 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+292E text40 CODE >6:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+293E text40 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+29BC text40 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+29C4 text40 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+29C8 text40 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+29E0 text40 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+29EE text40 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+29F6 text40 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+2A00 text40 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+2A36 text40 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+2A86 text40 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+2ABC text40 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+3104 text39 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+3104 text39 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+3108 text39 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+3116 text39 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+311E text39 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+3122 text39 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+3130 text39 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+3138 text39 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+313C text39 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+3144 text39 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+3156 text39 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+315A text39 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+315E text39 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+3164 text39 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+3166 text39 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+3174 text39 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+317A text39 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+3190 text39 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+3198 text39 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+319A text39 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+31A0 text39 CODE >36:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+31A6 text39 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+31B6 text39 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+31BE text39 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+31C6 text39 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+333A text38 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+333A text38 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+333E text38 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+334C text38 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3354 text38 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3358 text38 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3366 text38 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+336E text38 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3380 text38 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3384 text38 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3388 text38 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+338E text38 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+3390 text38 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+339E text38 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+33B4 text38 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+33BC text38 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+33C2 text38 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+33C8 text38 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+33D8 text38 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+33E0 text38 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+33E8 text38 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+21CE text37 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+21CE text37 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+21D4 text37 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+21DA text37 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+21E8 text37 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+21EA text37 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+21FA text37 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+220A text37 CODE >37:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+221A text37 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+221C text37 CODE >42:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2220 text37 CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2224 text37 CODE >46:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2234 text37 CODE >49:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+223A text37 CODE >50:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2240 text37 CODE >51:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+224E text37 CODE >52:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2250 text37 CODE >56:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2260 text37 CODE >58:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2270 text37 CODE >60:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2280 text37 CODE >63:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2282 text37 CODE >65:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2286 text37 CODE >66:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+228A text37 CODE >69:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+229A text37 CODE >75:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+22B0 text37 CODE >76:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+22C0 text37 CODE >77:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+22C8 text37 CODE >78:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+22CC text37 CODE >79:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+22E0 text37 CODE >83:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+22F0 text37 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+22F0 text37 CODE >85:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2304 text37 CODE >89:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+231E text37 CODE >92:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+232E text37 CODE >93:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+233E text37 CODE >94:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+234E text37 CODE >96:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2352 text37 CODE >97:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2356 text37 CODE >100:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2366 text37 CODE >101:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2370 text37 CODE >102:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+237A text37 CODE >103:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2388 text37 CODE >104:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+238A text37 CODE >105:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+238A text37 CODE >106:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2394 text37 CODE >112:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+23B2 text37 CODE >115:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+23B4 text37 CODE >116:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+23C4 text37 CODE >118:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+23C6 text37 CODE >97:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+23C6 text37 CODE >119:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+23D6 text37 CODE >122:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+23EC text37 CODE >123:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+23F2 text37 CODE >128:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+23FC text37 CODE >129:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+240A text37 CODE >130:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+240C text37 CODE >131:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+240C text37 CODE >132:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2416 text37 CODE >133:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+241C text37 CODE >127:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+242A text37 CODE >139:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+242E text37 CODE >140:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+243C text37 CODE >141:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+246A text37 CODE >142:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+246E text37 CODE >143:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2472 text37 CODE >144:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2472 text37 CODE >145:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2484 text37 CODE >149:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2484 text37 CODE >150:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2494 text37 CODE >151:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+24A0 text37 CODE >152:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+24AE text37 CODE >153:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+24D8 text37 CODE >154:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+24DC text37 CODE >159:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+24F6 text37 CODE >160:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+24FC text37 CODE >161:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+250C text37 CODE >165:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2526 text37 CODE >166:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+252E text37 CODE >167:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+253E text37 CODE >169:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2542 text37 CODE >173:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2546 text37 CODE >175:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2554 text37 CODE >176:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2556 text37 CODE >177:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+255A text37 CODE >180:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+255C text37 CODE >182:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2566 text37 CODE >185:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+33EA text36 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+33EA text36 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+3418 text36 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+3428 text36 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+3456 text36 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+3466 text36 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+3492 text36 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+2BC4 text35 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+2BC4 text35 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+2BF2 text35 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+2C02 text35 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+2C30 text35 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+2C40 text35 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+2C4E text35 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+2C60 text35 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+2C6E text35 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+2C80 text35 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+2C90 text35 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+2CA0 text35 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+2CC6 text35 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+1DA4 text34 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1DA4 text34 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1DAA text34 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1DB0 text34 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1DBE text34 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1DC0 text34 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1DD0 text34 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1DE0 text34 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1DF0 text34 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1DF2 text34 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1DF6 text34 CODE >36:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1E06 text34 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1E0C text34 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1E12 text34 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1E20 text34 CODE >42:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1E22 text34 CODE >45:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1E32 text34 CODE >48:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1E42 text34 CODE >50:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1E52 text34 CODE >53:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1E54 text34 CODE >54:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1E58 text34 CODE >57:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1E68 text34 CODE >58:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1E68 text34 CODE >65:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1E88 text34 CODE >66:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1E9C text34 CODE >95:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1EA8 text34 CODE >96:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1EB2 text34 CODE >97:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1EBC text34 CODE >98:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1EC8 text34 CODE >99:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1ED4 text34 CODE >100:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1EE0 text34 CODE >101:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1EEC text34 CODE >102:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1EF8 text34 CODE >103:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1F04 text34 CODE >104:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1F12 text34 CODE >105:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1F1E text34 CODE >106:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1F2E text34 CODE >107:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1F3A text34 CODE >108:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1F4A text34 CODE >109:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1F58 text34 CODE >110:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1F64 text34 CODE >111:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1F74 text34 CODE >112:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1F80 text34 CODE >113:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1F90 text34 CODE >114:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1F9C text34 CODE >115:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1FAC text34 CODE >116:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1FB8 text34 CODE >117:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1FE2 text34 CODE >145:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2018 text34 CODE >146:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2026 text34 CODE >149:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2040 text34 CODE >152:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2044 text34 CODE >153:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+204E text34 CODE >154:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+205C text34 CODE >155:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+205E text34 CODE >156:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+205E text34 CODE >157:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2068 text34 CODE >158:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+206E text34 CODE >152:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+207C text34 CODE >163:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2080 text34 CODE >164:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+208E text34 CODE >165:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+20BC text34 CODE >166:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+20C0 text34 CODE >167:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+20C4 text34 CODE >168:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+20C4 text34 CODE >169:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+20D6 text34 CODE >173:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+20D6 text34 CODE >174:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+20E6 text34 CODE >175:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+20F2 text34 CODE >176:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2100 text34 CODE >177:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+212A text34 CODE >178:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+212E text34 CODE >183:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2148 text34 CODE >184:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2158 text34 CODE >185:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+215C text34 CODE >187:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2176 text34 CODE >188:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2186 text34 CODE >190:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+218A text34 CODE >191:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+218E text34 CODE >192:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+218E text34 CODE >194:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2192 text34 CODE >195:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+21A2 text34 CODE >196:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+21B0 text34 CODE >197:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+21B2 text34 CODE >199:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+21B8 text34 CODE >201:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+21BC text34 CODE >203:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+21CC text34 CODE >205:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+3894 text33 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flneg.c
+3894 text33 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flneg.c
+38AA text33 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flneg.c
+38BA text33 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flneg.c
+38CA text33 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flneg.c
+1484 text32 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1484 text32 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+148A text32 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1490 text32 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+149E text32 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+14A0 text32 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+14B0 text32 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+14C0 text32 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+14D0 text32 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+14D2 text32 CODE >37:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+14D6 text32 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+14DA text32 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+14EA text32 CODE >44:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+14F0 text32 CODE >46:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1502 text32 CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1504 text32 CODE >49:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+150A text32 CODE >50:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1518 text32 CODE >51:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+151A text32 CODE >55:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+152A text32 CODE >57:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+153A text32 CODE >59:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+154A text32 CODE >62:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+154C text32 CODE >64:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1550 text32 CODE >65:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1554 text32 CODE >68:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1564 text32 CODE >75:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1576 text32 CODE >77:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1584 text32 CODE >78:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1588 text32 CODE >81:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+158C text32 CODE >82:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1590 text32 CODE >83:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1594 text32 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1598 text32 CODE >85:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+159C text32 CODE >86:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+15A0 text32 CODE >87:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+15A4 text32 CODE >88:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+15A8 text32 CODE >89:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+15AC text32 CODE >90:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+15B0 text32 CODE >91:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+15B4 text32 CODE >92:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+15B8 text32 CODE >93:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+15BC text32 CODE >94:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+15C0 text32 CODE >95:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+15C4 text32 CODE >98:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+15C8 text32 CODE >100:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+15F2 text32 CODE >101:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+160E text32 CODE >102:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+161E text32 CODE >103:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1622 text32 CODE >104:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1626 text32 CODE >106:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1626 text32 CODE >109:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1634 text32 CODE >110:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+163C text32 CODE >111:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1640 text32 CODE >113:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1644 text32 CODE >115:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1652 text32 CODE >116:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1654 text32 CODE >118:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+165E text32 CODE >119:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1660 text32 CODE >106:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1660 text32 CODE >120:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1672 text32 CODE >121:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1672 text32 CODE >124:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1680 text32 CODE >127:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1690 text32 CODE >128:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+16A4 text32 CODE >132:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+16B4 text32 CODE >134:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+16C2 text32 CODE >135:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+16D0 text32 CODE >136:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+16D8 text32 CODE >137:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+16DC text32 CODE >139:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+16E0 text32 CODE >141:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+16EE text32 CODE >142:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+16F0 text32 CODE >144:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+16FA text32 CODE >145:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1700 text32 CODE >153:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1726 text32 CODE >154:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1756 text32 CODE >155:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+175A text32 CODE >156:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+175C text32 CODE >157:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+176C text32 CODE >158:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+177C text32 CODE >162:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+178C text32 CODE >163:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+178C text32 CODE >166:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+17B2 text32 CODE >167:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+17C6 text32 CODE >172:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+17D0 text32 CODE >173:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+17DE text32 CODE >174:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+17E0 text32 CODE >176:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+17EE text32 CODE >177:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+17F2 text32 CODE >178:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+17F6 text32 CODE >180:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+17FA text32 CODE >182:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+180A text32 CODE >183:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+180C text32 CODE >171:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+181A text32 CODE >192:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+181E text32 CODE >193:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+182C text32 CODE >194:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1842 text32 CODE >195:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1846 text32 CODE >196:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+184A text32 CODE >197:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+184A text32 CODE >198:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+185C text32 CODE >202:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+185C text32 CODE >203:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+186C text32 CODE >204:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1878 text32 CODE >205:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1886 text32 CODE >206:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+18B0 text32 CODE >207:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+18C0 text32 CODE >208:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+18C2 text32 CODE >215:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+18E2 text32 CODE >216:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+18F2 text32 CODE >218:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1902 text32 CODE >219:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1906 text32 CODE >225:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1914 text32 CODE >226:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1916 text32 CODE >227:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+191A text32 CODE >230:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+191C text32 CODE >232:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1922 text32 CODE >233:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1930 text32 CODE >234:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1932 text32 CODE >236:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1942 text32 CODE >237:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+3714 text31 CODE >245:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+3714 text31 CODE >248:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+3724 text31 CODE >249:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+3758 text31 CODE >250:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+2ABE text30 CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2ABE text30 CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2AD4 text30 CODE >48:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2AE8 text30 CODE >49:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2B12 text30 CODE >50:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2B14 text30 CODE >51:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2B24 text30 CODE >52:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2B28 text30 CODE >53:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2B36 text30 CODE >54:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2B4E text30 CODE >57:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2B62 text30 CODE >60:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2B76 text30 CODE >63:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2B80 text30 CODE >64:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2B82 text30 CODE >62:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2B92 text30 CODE >67:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2BA2 text30 CODE >68:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2BB2 text30 CODE >69:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2BC2 text30 CODE >70:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2CC8 text29 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__fpclassifyf.c
+2CC8 text29 CODE >6:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__fpclassifyf.c
+2CE8 text29 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__fpclassifyf.c
+2D14 text29 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__fpclassifyf.c
+2D66 text29 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__fpclassifyf.c
+2DBC text29 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__fpclassifyf.c
+2DC4 text29 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__fpclassifyf.c
+2568 text28 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
+2568 text28 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
+2588 text28 CODE >6:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
+25C2 text28 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
+25DE text28 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
+25F2 text28 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
+2600 text28 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
+263E text28 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
+2670 text28 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
+26AC text28 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
+26BC text28 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
+26DC text28 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
+26E0 text28 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
+271C text28 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
+2730 text28 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
+2758 text28 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
+2768 text28 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
+2778 text28 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
+3AA8 text27 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\putch.c
+3AA8 text27 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\putch.c
+2F74 text26 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+2F74 text26 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+2F98 text26 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+2F9E text26 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+2FA2 text26 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+2FF6 text26 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+302A text26 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+303C text26 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+379E text25 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+379E text25 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+37A6 text25 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+37AA text25 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+37BC text25 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+37C0 text25 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+37E0 text25 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+3904 text24 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+3904 text24 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+390C text24 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+3910 text24 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+3914 text24 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+392C text24 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+3938 text24 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+303E text23 CODE >72:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+303E text23 CODE >77:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+304E text23 CODE >78:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3062 text23 CODE >82:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3084 text23 CODE >83:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+308C text23 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3090 text23 CODE >85:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+30A4 text23 CODE >86:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+30A8 text23 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+30C6 text23 CODE >90:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+30D6 text23 CODE >91:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+30EA text23 CODE >94:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3102 text23 CODE >95:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3614 text22 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcpy.c
+3614 text22 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcpy.c
+361C text22 CODE >6:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcpy.c
+3624 text22 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcpy.c
+366E text22 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcpy.c
+385C text21 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isupper.c
+385C text21 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isupper.c
+3892 text21 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isupper.c
+3556 text20 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\tolower.c
+3556 text20 CODE >6:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\tolower.c
+35AC text20 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\tolower.c
+35B4 text20 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\tolower.c
+82C text19 CODE >332:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+82C text19 CODE >339:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+836 text19 CODE >340:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+846 text19 CODE >341:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+854 text19 CODE >342:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+85C text19 CODE >343:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+880 text19 CODE >347:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+88A text19 CODE >348:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+892 text19 CODE >349:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+8B2 text19 CODE >350:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+8DC text19 CODE >351:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+8E0 text19 CODE >352:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+8E6 text19 CODE >356:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+90C text19 CODE >357:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+954 text19 CODE >358:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+96C text19 CODE >359:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+970 text19 CODE >360:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+988 text19 CODE >362:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+992 text19 CODE >363:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9BA text19 CODE >365:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9E0 text19 CODE >366:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A28 text19 CODE >367:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A40 text19 CODE >368:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A44 text19 CODE >369:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A60 text19 CODE >376:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A72 text19 CODE >377:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A7A text19 CODE >378:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+AB0 text19 CODE >380:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+AE4 text19 CODE >381:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+AEA text19 CODE >379:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B44 text19 CODE >384:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B78 text19 CODE >385:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B80 text19 CODE >383:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BB2 text19 CODE >390:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BC2 text19 CODE >391:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BC6 text19 CODE >392:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BD8 text19 CODE >393:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BEA text19 CODE >394:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BF2 text19 CODE >396:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C24 text19 CODE >398:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C36 text19 CODE >402:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C48 text19 CODE >403:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C9A text19 CODE >404:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C9E text19 CODE >405:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CA2 text19 CODE >406:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CA6 text19 CODE >411:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CAE text19 CODE >412:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CE0 text19 CODE >413:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CE4 text19 CODE >417:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CF6 text19 CODE >418:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D04 text19 CODE >419:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D14 text19 CODE >420:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D1C text19 CODE >422:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D2E text19 CODE >423:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D36 text19 CODE >428:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D3E text19 CODE >429:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D4E text19 CODE >430:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D5E text19 CODE >431:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D62 text19 CODE >432:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+DAA text19 CODE >433:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+DC6 text19 CODE >434:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+E1E text19 CODE >435:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+E52 text19 CODE >436:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+E58 text19 CODE >431:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+E76 text19 CODE >440:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+EAA text19 CODE >441:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+EDC text19 CODE >442:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+EEE text19 CODE >443:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+EF2 text19 CODE >445:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+F34 text19 CODE >446:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+F44 text19 CODE >451:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+F78 text19 CODE >453:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+FCE text19 CODE >454:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+FD4 text19 CODE >455:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1008 text19 CODE >456:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+101C text19 CODE >458:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1020 text19 CODE >463:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1030 text19 CODE >464:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1058 text19 CODE >465:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1060 text19 CODE >466:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1068 text19 CODE >467:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1070 text19 CODE >468:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1074 text19 CODE >469:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+10BC text19 CODE >470:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+10D8 text19 CODE >471:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+111A text19 CODE >472:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+111E text19 CODE >473:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1122 text19 CODE >474:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1142 text19 CODE >475:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1156 text19 CODE >476:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+115C text19 CODE >477:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1168 text19 CODE >480:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+117C text19 CODE >481:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1182 text19 CODE >482:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1188 text19 CODE >479:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+119A text19 CODE >484:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+11B0 text19 CODE >485:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+11B6 text19 CODE >487:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+120E text19 CODE >488:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1242 text19 CODE >489:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+124A text19 CODE >490:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+124E text19 CODE >468:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1288 text19 CODE >492:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+12A8 text19 CODE >493:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+12BC text19 CODE >495:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+12CC text19 CODE >498:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+12DE text19 CODE >499:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+12E6 text19 CODE >500:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+12F6 text19 CODE >501:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+12FE text19 CODE >502:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+130C text19 CODE >503:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1314 text19 CODE >504:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+131C text19 CODE >506:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1324 text19 CODE >507:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1328 text19 CODE >508:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+132E text19 CODE >509:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1354 text19 CODE >510:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1370 text19 CODE >511:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1378 text19 CODE >512:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+137E text19 CODE >507:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+13AA text19 CODE >514:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+13B0 text19 CODE >515:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+13E6 text19 CODE >516:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+13EC text19 CODE >517:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+13F2 text19 CODE >518:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+145C text19 CODE >519:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1462 text19 CODE >520:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1482 text19 CODE >525:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+2E9E text18 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strncmp.c
+2E9E text18 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strncmp.c
+2EAE text18 CODE >6:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strncmp.c
+2ED4 text18 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strncmp.c
+2F50 text18 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strncmp.c
+2F72 text18 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strncmp.c
+1944 text17 CODE >692:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1944 text17 CODE >702:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1968 text17 CODE >703:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1976 text17 CODE >705:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1988 text17 CODE >706:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+198C text17 CODE >762:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+19B0 text17 CODE >763:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+19B8 text17 CODE >764:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+19C6 text17 CODE >765:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+19EA text17 CODE >766:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+19F8 text17 CODE >767:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1A20 text17 CODE >768:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1A24 text17 CODE >769:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1A40 text17 CODE >770:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1A44 text17 CODE >771:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1A52 text17 CODE >770:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1AAA text17 CODE >779:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1ACA text17 CODE >780:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1ADA text17 CODE >781:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1B0A text17 CODE >782:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1B1A text17 CODE >783:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1B4A text17 CODE >942:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1B5C text17 CODE >944:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1B72 text17 CODE >945:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1B80 text17 CODE >946:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1BB0 text17 CODE >948:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1BDC text17 CODE >950:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1C0A text17 CODE >952:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1C30 text17 CODE >953:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1C88 text17 CODE >954:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1CB8 text17 CODE >955:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1CBC text17 CODE >956:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1CEC text17 CODE >957:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1CEC text17 CODE >958:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1D00 text17 CODE >1372:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1D24 text17 CODE >1373:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1D32 text17 CODE >1374:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1D46 text17 CODE >1375:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1D52 text17 CODE >1379:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1D60 text17 CODE >1380:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1D6C text17 CODE >1384:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1D90 text17 CODE >1385:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1DA2 text17 CODE >1387:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3494 text16 CODE >1390:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3494 text16 CODE >1395:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+349C text16 CODE >1396:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+34A6 text16 CODE >1397:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+34AA text16 CODE >1398:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+34D0 text16 CODE >1397:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+34EC text16 CODE >1400:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+34F4 text16 CODE >1404:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3670 text15 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+3670 text15 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+367A text15 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+3682 text15 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+368A text15 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+3692 text15 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+36AE text15 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+36C0 text15 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+3A48 text14 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcat.c
+3A48 text14 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcat.c
+3A6C text14 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcat.c
+39F8 text13 CODE >188:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+39FA text13 CODE >189:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+39FE text13 CODE >190:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3A00 text13 CODE >191:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3A02 text13 CODE >192:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3A10 text13 CODE >193:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3A12 text13 CODE >194:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3A20 text13 CODE >195:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+39CE text12 CODE >197:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+39D0 text12 CODE >198:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+39D4 text12 CODE >199:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+39D6 text12 CODE >200:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+39D8 text12 CODE >201:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+39E6 text12 CODE >202:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+39E8 text12 CODE >203:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+39F6 text12 CODE >204:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+35B6 text11 CODE >206:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+35B6 text11 CODE >207:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+35BA text11 CODE >208:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+35DE text11 CODE >209:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+35E2 text11 CODE >207:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3612 text11 CODE >211:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+37E2 text10 CODE >213:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+37E4 text10 CODE >214:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+37E4 text10 CODE >215:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+37F4 text10 CODE >216:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+37FC text10 CODE >217:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3802 text10 CODE >218:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3806 text10 CODE >219:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+380E text10 CODE >220:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3814 text10 CODE >222:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3820 text10 CODE >223:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+2DC6 text9 CODE >148:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+2DC6 text9 CODE >152:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+2DCA text9 CODE >153:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+2DCE text9 CODE >155:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+2DD0 text9 CODE >157:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+2DD4 text9 CODE >158:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+2DE2 text9 CODE >157:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+2DF0 text9 CODE >162:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+2DFE text9 CODE >163:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+2E48 text9 CODE >164:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+2E6E text9 CODE >165:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+2E82 text9 CODE >166:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+2E94 text9 CODE >168:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+2E9C text9 CODE >169:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+31C8 intcode_body CODE >77:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+31F2 intcode_body CODE >79:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3200 intcode_body CODE >81:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3202 intcode_body CODE >82:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3206 intcode_body CODE >83:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3212 intcode_body CODE >84:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3224 intcode_body CODE >86:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+323C intcode_body CODE >87:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3240 intcode_body CODE >90:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3258 intcode_body CODE >92:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+325A intcode_body CODE >94:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3A94 text7 CODE >171:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3A98 text7 CODE >172:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3A9C text7 CODE >173:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3AA0 text7 CODE >174:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3AA4 text7 CODE >175:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3AA6 text7 CODE >176:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+396E text6 CODE >188:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3972 text6 CODE >189:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3976 text6 CODE >190:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3978 text6 CODE >191:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+397A text6 CODE >192:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+398C text6 CODE >193:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+398E text6 CODE >194:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+39A0 text6 CODE >195:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+39A2 text5 CODE >178:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+39A2 text5 CODE >181:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+39B4 text5 CODE >182:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+39BA text5 CODE >183:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+39C0 text5 CODE >184:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+39C6 text5 CODE >185:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+39CC text5 CODE >186:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+393A text4 CODE >197:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+393E text4 CODE >198:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3942 text4 CODE >199:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3944 text4 CODE >200:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3946 text4 CODE >201:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3958 text4 CODE >202:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+395A text4 CODE >203:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+396C text4 CODE >204:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+34F6 text3 CODE >206:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+34F6 text3 CODE >207:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+34FA text3 CODE >208:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+351E text3 CODE >209:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3524 text3 CODE >207:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3554 text3 CODE >211:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+375A text2 CODE >213:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+375E text2 CODE >214:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+375E text2 CODE >215:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3770 text2 CODE >216:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3778 text2 CODE >217:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+377E text2 CODE >218:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3782 text2 CODE >219:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+378A text2 CODE >220:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3790 text2 CODE >222:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+379C text2 CODE >223:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3822 text1 CODE >128:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3822 text1 CODE >130:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3826 text1 CODE >131:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+382A text1 CODE >132:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+382E text1 CODE >133:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3832 text1 CODE >135:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3836 text1 CODE >136:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+383A text1 CODE >137:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+383E text1 CODE >138:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3842 text1 CODE >139:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3846 text1 CODE >141:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+384A text1 CODE >142:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+384E text1 CODE >143:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3852 text1 CODE >144:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3856 text1 CODE >145:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+385A text1 CODE >146:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3286 text0 CODE >97:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3286 text0 CODE >99:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+328A text0 CODE >100:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+328E text0 CODE >101:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+32A2 text0 CODE >104:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+32BC text0 CODE >106:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+32CA text0 CODE >107:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+32CE text0 CODE >109:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+32DC text0 CODE >110:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+32E0 text0 CODE >111:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+32EC text0 CODE >111:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+32FA text0 CODE >111:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3302 text0 CODE >111:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+330C text0 CODE >113:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+330E text0 CODE >114:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3312 text0 CODE >115:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3318 text0 CODE >117:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+331C text0 CODE >118:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+331E text0 CODE >117:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+332E text0 CODE >121:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3330 text0 CODE >122:C:\Users\Claudio Ohara Off\Desktop\TCC_uMicrocontrolador\Codigos\C3\Projeto_3.X\newmain.c
+3A22 cinit CODE >663:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A22 cinit CODE >665:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A22 cinit CODE >668:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A22 cinit CODE >715:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A26 cinit CODE >716:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A28 cinit CODE >717:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A28 cinit CODE >718:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A2A cinit CODE >719:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A2C cinit CODE >720:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A2E cinit CODE >723:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A32 cinit CODE >724:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A34 cinit CODE >725:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A34 cinit CODE >726:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A36 cinit CODE >727:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A38 cinit CODE >728:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A3A cinit CODE >734:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A3A cinit CODE >736:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A3C cinit CODE >737:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A3E cinit CODE >739:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A40 cinit CODE >740:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A42 cinit CODE >741:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+3A44 cinit CODE >742:C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_a 140 0 BANK1 1 bssBANK1 dist/default/production\Projeto_3.X.production.o
+_b 100 0 BANK1 1 bssBANK1 dist/default/production\Projeto_3.X.production.o
+_k D3 0 BANK0 1 bssBANK0 dist/default/production\Projeto_3.X.production.o
+___awdiv@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___fpclassifyf@e 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___fpclassifyf@u B 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___fpclassifyf@x 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Projeto_3.X.production.o
+__size_ofi2_LCD_Char 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__Hspace_0 3AAA 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__Hspace_1 1DB 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+i2_LCD_String_xy 37E2 0 CODE 0 text10 dist/default/production\Projeto_3.X.production.o
+strncmp@_l 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+strncmp@_r 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Projeto_3.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Projeto_3.X.production.o
+?_pad 11 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+?_vfprintf 56 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\Projeto_3.X.production.o
+_LATB F8A 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_RCON FD0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.o
+_atoi 292E 0 CODE 0 text40 dist/default/production\Projeto_3.X.production.o
+_data D4 0 BANK0 1 bssBANK0 dist/default/production\Projeto_3.X.production.o
+_dbuf 180 0 BANK1 1 bssBANK1 dist/default/production\Projeto_3.X.production.o
+_main 3286 0 CODE 0 text0 dist/default/production\Projeto_3.X.production.o
+_nout CA 0 BANK0 1 bssBANK0 dist/default/production\Projeto_3.X.production.o
+_prec CE 0 BANK0 1 bssBANK0 dist/default/production\Projeto_3.X.production.o
+btemp 5E 0 COMRAM 1 temp dist/default/production\Projeto_3.X.production.o
+pad@i 18 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+pad@p 15 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+pad@w 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+start E 0 CODE 0 init C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.o
+___flmul@aexp 20 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___flmul@bexp 21 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___flmul@prod 22 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___flmul@sign 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___flmul@temp 26 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__size_of___fladd 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__size_of___fldiv 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__size_of___flmul 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__size_of___flneg 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__size_of___flsub 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__size_of___fltol 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__size_of_atoi 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+pad@fp 11 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+_tolower 3556 0 CODE 0 text20 dist/default/production\Projeto_3.X.production.o
+?___wmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+isupper@c 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+efgtoa@fp 34 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+efgtoa@ne 70 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+efgtoa@ou 74 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+efgtoa@pp 6E 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+__size_of_samples 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+LCD_Char@dat 1D1 0 BANK1 1 cstackBANK1 dist/default/production\Projeto_3.X.production.o
+_LCD_Char 393A 0 CODE 0 text4 dist/default/production\Projeto_3.X.production.o
+_LCD_Init 39A2 0 CODE 0 text5 dist/default/production\Projeto_3.X.production.o
+__Hpowerup E 0 CODE 0 powerup dist/default/production\Projeto_3.X.production.o
+__end_of_vfpfcnvrt 1DA4 0 CODE 0 text17 dist/default/production\Projeto_3.X.production.o
+___awmod@sign 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+_T0CONbits FD5 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+ttemp5 5F 0 COMRAM 1 temp dist/default/production\Projeto_3.X.production.o
+ttemp6 62 0 COMRAM 1 temp dist/default/production\Projeto_3.X.production.o
+ttemp7 66 0 COMRAM 1 temp dist/default/production\Projeto_3.X.production.o
+__size_of_vfpfcnvrt 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.o
+__end_of_LCD_Char 396E 0 CODE 0 text4 dist/default/production\Projeto_3.X.production.o
+__end_of_LCD_Init 39CE 0 CODE 0 text5 dist/default/production\Projeto_3.X.production.o
+intlevel0 0 0 CODE 0 text C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.o
+intlevel1 0 0 CODE 0 text C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.o
+intlevel2 0 0 CODE 0 text C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.o
+intlevel3 0 0 CODE 0 text C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.o
+floorf@e 28 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+floorf@m 24 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+floorf@u 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+floorf@x 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+?_efgtoa 34 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+strcat@dest F 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Projeto_3.X.production.o
+wtemp8 5F 0 COMRAM 1 temp dist/default/production\Projeto_3.X.production.o
+?_floorf 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+i2LCD_String_xy@msg 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+i2LCD_String_xy@pos 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+i2LCD_String_xy@row 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__size_of_Config_ADCONS 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\Projeto_3.X.production.o
+___awdiv@sign 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\Projeto_3.X.production.o
+_vfpfcnvrt 1944 0 CODE 0 text17 dist/default/production\Projeto_3.X.production.o
+___wmul@multiplicand 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+_ADCON0 FC2 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_ADCON1 FC1 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_ADCON2 FC0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_ADRESH FC4 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_ADRESL FC3 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_vfpfcnvrt$925 4A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+_vfpfcnvrt$929 4C 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___awdiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__size_ofi2_LCD_String_xy 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.o
+_LCD_String 34F6 0 CODE 0 text3 dist/default/production\Projeto_3.X.production.o
+?_tolower 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+_digital C6 0 BANK0 1 bssBANK0 dist/default/production\Projeto_3.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\Projeto_3.X.production.o
+__end_of___fleq 3494 0 CODE 0 text36 dist/default/production\Projeto_3.X.production.o
+__end_of___flge 2CC8 0 CODE 0 text35 dist/default/production\Projeto_3.X.production.o
+__end_of___wmul 3A94 0 CODE 0 text43 dist/default/production\Projeto_3.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Projeto_3.X.production.o
+__end_of_Config_ADCONS 3AA8 0 CODE 0 text7 dist/default/production\Projeto_3.X.production.o
+__size_of_sprintf 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+___fldiv@aexp 19 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___fldiv@bexp 18 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___fldiv@sign 11 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Projeto_3.X.production.o
+__Hintcodelo E 0 CODE 0 intcodelo dist/default/production\Projeto_3.X.production.o
+___awdiv@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__end_of___awdiv 31C8 0 CODE 0 text39 dist/default/production\Projeto_3.X.production.o
+__end_of___awmod 33EA 0 CODE 0 text38 dist/default/production\Projeto_3.X.production.o
+__end_of___fladd 1944 0 CODE 0 text32 dist/default/production\Projeto_3.X.production.o
+__end_of___fldiv 2568 0 CODE 0 text37 dist/default/production\Projeto_3.X.production.o
+__end_of___flmul 21CE 0 CODE 0 text34 dist/default/production\Projeto_3.X.production.o
+__end_of___flneg 38CC 0 CODE 0 text33 dist/default/production\Projeto_3.X.production.o
+__end_of___flsub 375A 0 CODE 0 text31 dist/default/production\Projeto_3.X.production.o
+__end_of___fltol 2BC4 0 CODE 0 text30 dist/default/production\Projeto_3.X.production.o
+__size_of_isdigit 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+?___fpclassifyf 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__size_of_isspace 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__size_of_isupper 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_INTCON FF2 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+?_strlen 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__end_of_efgtoa 1484 0 CODE 0 text19 dist/default/production\Projeto_3.X.production.o
+__size_of_strncmp 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__end_of_floorf 277A 0 CODE 0 text28 dist/default/production\Projeto_3.X.production.o
+__end_of_samples 3286 0 CODE 0 intcode_body dist/default/production\Projeto_3.X.production.o
+__size_of_fputc 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__size_of_fputs 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+___fladd@a 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___fladd@b 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___fldiv@a 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___fldiv@b 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__size_of_putch 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+___flmul@a 13 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___flmul@b F 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___flsub@a 2C 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___flsub@b 28 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Lintcodelo E 0 CODE 0 intcodelo dist/default/production\Projeto_3.X.production.o
+start_initialization 3A22 0 CODE 0 cinit dist/default/production\Projeto_3.X.production.o
+_OSCCON FD3 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Projeto_3.X.production.o
+efgtoa@c 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+efgtoa@d 78 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+efgtoa@e 90 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+efgtoa@f 36 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+efgtoa@g 8C 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+efgtoa@h 82 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+efgtoa@i 8A 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+efgtoa@l 86 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+efgtoa@m 72 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+efgtoa@n 92 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+efgtoa@p 7C 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+efgtoa@t 6C 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+efgtoa@u 94 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+efgtoa@w 7E 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+_tolower$1065 D 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__end_of_LCD_String 3556 0 CODE 0 text3 dist/default/production\Projeto_3.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_Conv_AD 2DC6 0 CODE 0 text9 dist/default/production\Projeto_3.X.production.o
+efgtoa@mode 81 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+efgtoa@sign 7A 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+i2LCD_Command@cmd 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+__pcstackBANK1 1D0 0 BANK1 1 cstackBANK1 dist/default/production\Projeto_3.X.production.o
+__end_of_LCD_Command 39A2 0 CODE 0 text6 dist/default/production\Projeto_3.X.production.o
+LCD_String_xy@msg 1D5 0 BANK1 1 cstackBANK1 dist/default/production\Projeto_3.X.production.o
+LCD_String_xy@pos 1D4 0 BANK1 1 cstackBANK1 dist/default/production\Projeto_3.X.production.o
+LCD_String_xy@row 1D7 0 BANK1 1 cstackBANK1 dist/default/production\Projeto_3.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.o
+_efgtoa$899 60 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+_efgtoa$900 62 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+_efgtoa$905 64 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+_efgtoa$909 66 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+_efgtoa$910 68 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+_efgtoa$911 6A 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+fputc@fp 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+fputs@fp C 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+i2LCD_String@msg 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\Projeto_3.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\Projeto_3.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\Projeto_3.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\Projeto_3.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\Projeto_3.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\Projeto_3.X.production.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\Projeto_3.X.production.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\Projeto_3.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\Projeto_3.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\Projeto_3.X.production.o
+__end_of_strcat 3A6E 0 CODE 0 text14 dist/default/production\Projeto_3.X.production.o
+__end_of_strcpy 3670 0 CODE 0 text22 dist/default/production\Projeto_3.X.production.o
+__end_of_strlen 393A 0 CODE 0 text24 dist/default/production\Projeto_3.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\Projeto_3.X.production.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production\Projeto_3.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\Projeto_3.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\Projeto_3.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\Projeto_3.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\Projeto_3.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\Projeto_3.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\Projeto_3.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\Projeto_3.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\Projeto_3.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\Projeto_3.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\Projeto_3.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\Projeto_3.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\Projeto_3.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\Projeto_3.X.production.o
+__size_of___xxtofl 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Projeto_3.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\Projeto_3.X.production.o
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.o
+_LCD_String_xy 375A 0 CODE 0 text2 dist/default/production\Projeto_3.X.production.o
+___xxtofl@arg B 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___xxtofl@exp A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___xxtofl@val 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+efgtoa@nmode 80 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+__end_of_sprintf 36C2 0 CODE 0 text15 dist/default/production\Projeto_3.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\Projeto_3.X.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production\Projeto_3.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\Projeto_3.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\Projeto_3.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\Projeto_3.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\Projeto_3.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\Projeto_3.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\Projeto_3.X.production.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\Projeto_3.X.production.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\Projeto_3.X.production.o
+__end_of_isdigit 3904 0 CODE 0 text42 dist/default/production\Projeto_3.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\Projeto_3.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\Projeto_3.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\Projeto_3.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\Projeto_3.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\Projeto_3.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\Projeto_3.X.production.o
+__end_of_isspace 3714 0 CODE 0 text41 dist/default/production\Projeto_3.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\Projeto_3.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\Projeto_3.X.production.o
+__end_of_isupper 3894 0 CODE 0 text21 dist/default/production\Projeto_3.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\Projeto_3.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\Projeto_3.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\Projeto_3.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\Projeto_3.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\Projeto_3.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\Projeto_3.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\Projeto_3.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\Projeto_3.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\Projeto_3.X.production.o
+__end_of_inic_regs 385C 0 CODE 0 text1 dist/default/production\Projeto_3.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\Projeto_3.X.production.o
+___flmul@grs 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\Projeto_3.X.production.o
+__size_of_inic_regs 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__end_of_strncmp 2F74 0 CODE 0 text18 dist/default/production\Projeto_3.X.production.o
+_INTCONbits FF2 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\Projeto_3.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\Projeto_3.X.production.o
+__Hinit 12 0 CODE 0 init dist/default/production\Projeto_3.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\Projeto_3.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\Projeto_3.X.production.o
+__Htemp 5F 0 COMRAM 1 temp dist/default/production\Projeto_3.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\Projeto_3.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\Projeto_3.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\Projeto_3.X.production.o
+__Linit E 0 CODE 0 init dist/default/production\Projeto_3.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\Projeto_3.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\Projeto_3.X.production.o
+__Ltemp 5E 0 COMRAM 1 temp dist/default/production\Projeto_3.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\Projeto_3.X.production.o
+i2_LCD_Command 39F8 0 CODE 0 text13 dist/default/production\Projeto_3.X.production.o
+___fleq 33EA 0 CODE 0 text36 dist/default/production\Projeto_3.X.production.o
+___flge 2BC4 0 CODE 0 text35 dist/default/production\Projeto_3.X.production.o
+___wmul 3A6E 0 CODE 0 text43 dist/default/production\Projeto_3.X.production.o
+?_Conv_AD A8 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production\Projeto_3.X.production.o
+int$flags 5E 0 COMRAM 1 temp dist/default/production\Projeto_3.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+isspace@c 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\Projeto_3.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\Projeto_3.X.production.o
+__S0 3AAA 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__S1 1DB 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__S2 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_pad 303E 0 CODE 0 text23 dist/default/production\Projeto_3.X.production.o
+_inic_regs 3822 0 CODE 0 text1 dist/default/production\Projeto_3.X.production.o
+___fpclassifyf 2CC8 0 CODE 0 text29 dist/default/production\Projeto_3.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Projeto_3.X.production.o
+_efgtoa 82C 0 CODE 0 text19 dist/default/production\Projeto_3.X.production.o
+__size_of_tolower 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\Projeto_3.X.production.o
+sprintf@fmt 9A 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+___xxtofl 277A 0 CODE 0 text44 dist/default/production\Projeto_3.X.production.o
+_floorf 2568 0 CODE 0 text28 dist/default/production\Projeto_3.X.production.o
+__end_of_pad 3104 0 CODE 0 text23 dist/default/production\Projeto_3.X.production.o
+int_func 31C8 0 CODE 0 intcode_body dist/default/production\Projeto_3.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\Projeto_3.X.production.o
+strcpy@d D 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+strcpy@s B 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Hramtop 800 0 RAM 0 ramtop dist/default/production\Projeto_3.X.production.o
+strlen@a 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+strlen@s 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\Projeto_3.X.production.o
+i2_LCD_Char 39CE 0 CODE 0 text12 dist/default/production\Projeto_3.X.production.o
+__end_of___xxtofl 292E 0 CODE 0 text44 dist/default/production\Projeto_3.X.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\Projeto_3.X.production.o
+__size_of___fleq 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__size_of___flge 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__size_of___wmul 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\Projeto_3.X.production.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\Projeto_3.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\Projeto_3.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\Projeto_3.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\Projeto_3.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\Projeto_3.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\Projeto_3.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\Projeto_3.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\Projeto_3.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\Projeto_3.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\Projeto_3.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\Projeto_3.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\Projeto_3.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production\Projeto_3.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production\Projeto_3.X.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production\Projeto_3.X.production.o
+__Htext24 0 0 ABS 0 text24 dist/default/production\Projeto_3.X.production.o
+__Htext25 0 0 ABS 0 text25 dist/default/production\Projeto_3.X.production.o
+__Htext26 0 0 ABS 0 text26 dist/default/production\Projeto_3.X.production.o
+__Htext27 0 0 ABS 0 text27 dist/default/production\Projeto_3.X.production.o
+__Htext28 0 0 ABS 0 text28 dist/default/production\Projeto_3.X.production.o
+__Htext29 0 0 ABS 0 text29 dist/default/production\Projeto_3.X.production.o
+__Htext30 0 0 ABS 0 text30 dist/default/production\Projeto_3.X.production.o
+__Htext31 0 0 ABS 0 text31 dist/default/production\Projeto_3.X.production.o
+__Htext32 0 0 ABS 0 text32 dist/default/production\Projeto_3.X.production.o
+__Htext33 0 0 ABS 0 text33 dist/default/production\Projeto_3.X.production.o
+__Htext34 0 0 ABS 0 text34 dist/default/production\Projeto_3.X.production.o
+__Htext35 0 0 ABS 0 text35 dist/default/production\Projeto_3.X.production.o
+__Htext36 0 0 ABS 0 text36 dist/default/production\Projeto_3.X.production.o
+__Htext37 0 0 ABS 0 text37 dist/default/production\Projeto_3.X.production.o
+__Htext38 0 0 ABS 0 text38 dist/default/production\Projeto_3.X.production.o
+__Htext39 0 0 ABS 0 text39 dist/default/production\Projeto_3.X.production.o
+__Htext40 0 0 ABS 0 text40 dist/default/production\Projeto_3.X.production.o
+__Htext41 0 0 ABS 0 text41 dist/default/production\Projeto_3.X.production.o
+__Htext42 0 0 ABS 0 text42 dist/default/production\Projeto_3.X.production.o
+__Htext43 0 0 ABS 0 text43 dist/default/production\Projeto_3.X.production.o
+__Htext44 0 0 ABS 0 text44 dist/default/production\Projeto_3.X.production.o
+vfpfcnvrt@fmt 42 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___awmod@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+pad@buf 13 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___fladd@signs D 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+i2LCD_Char@dat 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__ptext10 37E2 0 CODE 0 text10 dist/default/production\Projeto_3.X.production.o
+__ptext11 35B6 0 CODE 0 text11 dist/default/production\Projeto_3.X.production.o
+__ptext12 39CE 0 CODE 0 text12 dist/default/production\Projeto_3.X.production.o
+__ptext13 39F8 0 CODE 0 text13 dist/default/production\Projeto_3.X.production.o
+__ptext14 3A48 0 CODE 0 text14 dist/default/production\Projeto_3.X.production.o
+__ptext15 3670 0 CODE 0 text15 dist/default/production\Projeto_3.X.production.o
+__ptext16 3494 0 CODE 0 text16 dist/default/production\Projeto_3.X.production.o
+__ptext17 1944 0 CODE 0 text17 dist/default/production\Projeto_3.X.production.o
+__ptext18 2E9E 0 CODE 0 text18 dist/default/production\Projeto_3.X.production.o
+__ptext19 82C 0 CODE 0 text19 dist/default/production\Projeto_3.X.production.o
+__ptext20 3556 0 CODE 0 text20 dist/default/production\Projeto_3.X.production.o
+__ptext21 385C 0 CODE 0 text21 dist/default/production\Projeto_3.X.production.o
+__ptext22 3614 0 CODE 0 text22 dist/default/production\Projeto_3.X.production.o
+__ptext23 303E 0 CODE 0 text23 dist/default/production\Projeto_3.X.production.o
+__ptext24 3904 0 CODE 0 text24 dist/default/production\Projeto_3.X.production.o
+__ptext25 379E 0 CODE 0 text25 dist/default/production\Projeto_3.X.production.o
+__ptext26 2F74 0 CODE 0 text26 dist/default/production\Projeto_3.X.production.o
+__ptext27 3AA8 0 CODE 0 text27 dist/default/production\Projeto_3.X.production.o
+__ptext28 2568 0 CODE 0 text28 dist/default/production\Projeto_3.X.production.o
+__ptext29 2CC8 0 CODE 0 text29 dist/default/production\Projeto_3.X.production.o
+__ptext30 2ABE 0 CODE 0 text30 dist/default/production\Projeto_3.X.production.o
+__ptext31 3714 0 CODE 0 text31 dist/default/production\Projeto_3.X.production.o
+__ptext32 1484 0 CODE 0 text32 dist/default/production\Projeto_3.X.production.o
+__ptext33 3894 0 CODE 0 text33 dist/default/production\Projeto_3.X.production.o
+__ptext34 1DA4 0 CODE 0 text34 dist/default/production\Projeto_3.X.production.o
+__ptext35 2BC4 0 CODE 0 text35 dist/default/production\Projeto_3.X.production.o
+__ptext36 33EA 0 CODE 0 text36 dist/default/production\Projeto_3.X.production.o
+__ptext37 21CE 0 CODE 0 text37 dist/default/production\Projeto_3.X.production.o
+__ptext38 333A 0 CODE 0 text38 dist/default/production\Projeto_3.X.production.o
+__ptext39 3104 0 CODE 0 text39 dist/default/production\Projeto_3.X.production.o
+__ptext40 292E 0 CODE 0 text40 dist/default/production\Projeto_3.X.production.o
+__ptext41 36C2 0 CODE 0 text41 dist/default/production\Projeto_3.X.production.o
+__ptext42 38CC 0 CODE 0 text42 dist/default/production\Projeto_3.X.production.o
+__ptext43 3A6E 0 CODE 0 text43 dist/default/production\Projeto_3.X.production.o
+__ptext44 277A 0 CODE 0 text44 dist/default/production\Projeto_3.X.production.o
+_atoi$963 10 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+_atoi$964 14 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+_atoi$965 12 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___awdiv 3104 0 CODE 0 text39 dist/default/production\Projeto_3.X.production.o
+___awmod 333A 0 CODE 0 text38 dist/default/production\Projeto_3.X.production.o
+___fladd 1484 0 CODE 0 text32 dist/default/production\Projeto_3.X.production.o
+___fldiv 21CE 0 CODE 0 text37 dist/default/production\Projeto_3.X.production.o
+___flmul 1DA4 0 CODE 0 text34 dist/default/production\Projeto_3.X.production.o
+___flneg 3894 0 CODE 0 text33 dist/default/production\Projeto_3.X.production.o
+___flsub 3714 0 CODE 0 text31 dist/default/production\Projeto_3.X.production.o
+___fltol 2ABE 0 CODE 0 text30 dist/default/production\Projeto_3.X.production.o
+__pintcode_body 31C8 0 CODE 0 intcode_body dist/default/production\Projeto_3.X.production.o
+samples@n B8 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+__size_of_LCD_String_xy 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Projeto_3.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\Projeto_3.X.production.o
+?_atoi 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\Projeto_3.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\Projeto_3.X.production.o
+__size_of_efgtoa 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__size_of_LCD_Command 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+strncmp@l 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+strncmp@n 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+strncmp@r A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___wmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___fldiv@grs 14 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___fldiv@rem D 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+LCD_String_xy@location 1D8 0 BANK1 1 cstackBANK1 dist/default/production\Projeto_3.X.production.o
+__size_of_floorf 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__size_of_LCD_String 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_samples 8 0 CODE 0 intcode dist/default/production\Projeto_3.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\Projeto_3.X.production.o
+_strcat 3A48 0 CODE 0 text14 dist/default/production\Projeto_3.X.production.o
+_strcpy 3614 0 CODE 0 text22 dist/default/production\Projeto_3.X.production.o
+_strlen 3904 0 CODE 0 text24 dist/default/production\Projeto_3.X.production.o
+i2LCD_String_xy@location 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\Projeto_3.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.o
+___fldiv@new_exp 12 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__size_ofi2_LCD_Command 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__size_of_vfprintf 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+stackhi 7FF 0 ABS 0 - C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.o
+stacklo 1DB 0 ABS 0 - C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.o
+_voltage C2 0 BANK0 1 bssBANK0 dist/default/production\Projeto_3.X.production.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production\Projeto_3.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\Projeto_3.X.production.o
+tolower@c 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\Projeto_3.X.production.o
+_ADCON0bits FC2 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_ADCON2bits FC0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+___fladd@grs 10 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+strcpy@dest 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___fleq@ff1 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___fleq@ff2 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__end_of_LCD_String_xy 379E 0 CODE 0 text2 dist/default/production\Projeto_3.X.production.o
+__end_ofi2_LCD_Char 39F8 0 CODE 0 text12 dist/default/production\Projeto_3.X.production.o
+?_vfpfcnvrt 40 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+strcat@src 11 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production\Projeto_3.X.production.o
+___flge@ff1 28 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___flge@ff2 2C 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__end_of_tolower 35B6 0 CODE 0 text20 dist/default/production\Projeto_3.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___fltol@exp1 A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__size_of___fpclassifyf 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+end_of_initialization 3A3A 0 CODE 0 cinit dist/default/production\Projeto_3.X.production.o
+Config_ADCONS@adcon2_config 1D1 0 BANK1 1 cstackBANK1 dist/default/production\Projeto_3.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\Projeto_3.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\Projeto_3.X.production.o
+fputc@c 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+fputs@c E 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+fputs@i F 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+fputs@s A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+Conv_AD@result_AD AC 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+___awdiv@quotient 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+?___awdiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+?___awmod 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+?___fladd 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+?___fldiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+?___flmul F 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+?___flneg 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+?___flsub 28 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+?___fltol 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__end_ofi2_LCD_Command 3A22 0 CODE 0 text13 dist/default/production\Projeto_3.X.production.o
+vfprintf@fmt 58 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\Projeto_3.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\Projeto_3.X.production.o
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\Projeto_3.X.production.o
+___awmod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Lramtop 800 0 RAM 0 ramtop dist/default/production\Projeto_3.X.production.o
+__size_of_strcat 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__size_of_strcpy 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__size_of_strlen 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\Projeto_3.X.production.o
+__pcinit 3A22 0 CODE 0 cinit dist/default/production\Projeto_3.X.production.o
+vfpfcnvrt@ap 44 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+vfpfcnvrt@ct 52 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+vfpfcnvrt@fp 40 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___flneg@f1 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__ptext0 3286 0 CODE 0 text0 dist/default/production\Projeto_3.X.production.o
+__ptext1 3822 0 CODE 0 text1 dist/default/production\Projeto_3.X.production.o
+__ptext2 375A 0 CODE 0 text2 dist/default/production\Projeto_3.X.production.o
+__ptext3 34F6 0 CODE 0 text3 dist/default/production\Projeto_3.X.production.o
+__ptext4 393A 0 CODE 0 text4 dist/default/production\Projeto_3.X.production.o
+__ptext5 39A2 0 CODE 0 text5 dist/default/production\Projeto_3.X.production.o
+__ptext6 396E 0 CODE 0 text6 dist/default/production\Projeto_3.X.production.o
+__ptext7 3A94 0 CODE 0 text7 dist/default/production\Projeto_3.X.production.o
+__ptext9 2DC6 0 CODE 0 text9 dist/default/production\Projeto_3.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\Projeto_3.X.production.o
+vfprintf@ap 5A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+vfprintf@fp 56 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+vfprintf@cfmt 5C 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\Projeto_3.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\Projeto_3.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\Projeto_3.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\Projeto_3.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\Projeto_3.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\Projeto_3.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\Projeto_3.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\Projeto_3.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\Projeto_3.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\Projeto_3.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\Projeto_3.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production\Projeto_3.X.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production\Projeto_3.X.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production\Projeto_3.X.production.o
+__Ltext24 0 0 ABS 0 text24 dist/default/production\Projeto_3.X.production.o
+__Ltext25 0 0 ABS 0 text25 dist/default/production\Projeto_3.X.production.o
+__Ltext26 0 0 ABS 0 text26 dist/default/production\Projeto_3.X.production.o
+__Ltext27 0 0 ABS 0 text27 dist/default/production\Projeto_3.X.production.o
+__Ltext28 0 0 ABS 0 text28 dist/default/production\Projeto_3.X.production.o
+__Ltext29 0 0 ABS 0 text29 dist/default/production\Projeto_3.X.production.o
+__Ltext30 0 0 ABS 0 text30 dist/default/production\Projeto_3.X.production.o
+__Ltext31 0 0 ABS 0 text31 dist/default/production\Projeto_3.X.production.o
+__Ltext32 0 0 ABS 0 text32 dist/default/production\Projeto_3.X.production.o
+__Ltext33 0 0 ABS 0 text33 dist/default/production\Projeto_3.X.production.o
+__Ltext34 0 0 ABS 0 text34 dist/default/production\Projeto_3.X.production.o
+__Ltext35 0 0 ABS 0 text35 dist/default/production\Projeto_3.X.production.o
+__Ltext36 0 0 ABS 0 text36 dist/default/production\Projeto_3.X.production.o
+__Ltext37 0 0 ABS 0 text37 dist/default/production\Projeto_3.X.production.o
+__Ltext38 0 0 ABS 0 text38 dist/default/production\Projeto_3.X.production.o
+__Ltext39 0 0 ABS 0 text39 dist/default/production\Projeto_3.X.production.o
+__Ltext40 0 0 ABS 0 text40 dist/default/production\Projeto_3.X.production.o
+__Ltext41 0 0 ABS 0 text41 dist/default/production\Projeto_3.X.production.o
+__Ltext42 0 0 ABS 0 text42 dist/default/production\Projeto_3.X.production.o
+__Ltext43 0 0 ABS 0 text43 dist/default/production\Projeto_3.X.production.o
+__Ltext44 0 0 ABS 0 text44 dist/default/production\Projeto_3.X.production.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\CLAUDI~3\AppData\Local\Temp\xcAsats.o
+_sprintf 3670 0 CODE 0 text15 dist/default/production\Projeto_3.X.production.o
+_vfprintf 3494 0 CODE 0 text16 dist/default/production\Projeto_3.X.production.o
+__size_of_Conv_AD 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__Lpowerup E 0 CODE 0 powerup dist/default/production\Projeto_3.X.production.o
+?___xxtofl 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Projeto_3.X.production.o
+__end_of___fpclassifyf 2DC6 0 CODE 0 text29 dist/default/production\Projeto_3.X.production.o
+sprintf@ap A0 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+_isdigit 38CC 0 CODE 0 text42 dist/default/production\Projeto_3.X.production.o
+___fladd@aexp E 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___fladd@bexp F 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+LCD_String@msg 1D2 0 BANK1 1 cstackBANK1 dist/default/production\Projeto_3.X.production.o
+Config_ADCONS@adcon1_config 1D0 0 BANK1 1 cstackBANK1 dist/default/production\Projeto_3.X.production.o
+___fltol@sign1 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+_isspace 36C2 0 CODE 0 text41 dist/default/production\Projeto_3.X.production.o
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\Projeto_3.X.production.o
+_isupper 385C 0 CODE 0 text21 dist/default/production\Projeto_3.X.production.o
+_isspace$994 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\Projeto_3.X.production.o
+__end_of_vfprintf 34F6 0 CODE 0 text16 dist/default/production\Projeto_3.X.production.o
+_strncmp 2E9E 0 CODE 0 text18 dist/default/production\Projeto_3.X.production.o
+i2_LCD_String 35B6 0 CODE 0 text11 dist/default/production\Projeto_3.X.production.o
+___fltol@f1 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+___param_bank 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Projeto_3.X.production.o
+strcpy@src 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__end_of__initialization 3A3A 0 CODE 0 cinit dist/default/production\Projeto_3.X.production.o
+___awmod@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+_INTCON2 FF1 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\Projeto_3.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\Projeto_3.X.production.o
+LCD_Command@cmd 1D1 0 BANK1 1 cstackBANK1 dist/default/production\Projeto_3.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+Config_ADCONS@adcon0_config 1D2 0 BANK1 1 cstackBANK1 dist/default/production\Projeto_3.X.production.o
+___fpclassifyf@F465 BE 0 BANK0 1 bssBANK0 dist/default/production\Projeto_3.X.production.o
+__end_ofi2_LCD_String_xy 3822 0 CODE 0 text10 dist/default/production\Projeto_3.X.production.o
+vfpfcnvrt@c 55 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+vfpfcnvrt@f 4E 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+sprintf@f A2 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+sprintf@s 98 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+__end_of_atoi 2ABE 0 CODE 0 text40 dist/default/production\Projeto_3.X.production.o
+__end_of_main 333A 0 CODE 0 text0 dist/default/production\Projeto_3.X.production.o
+__pintcode 8 0 CODE 0 intcode dist/default/production\Projeto_3.X.production.o
+isdigit@c 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__end_of_fputc 303E 0 CODE 0 text26 dist/default/production\Projeto_3.X.production.o
+__end_of_fputs 37E2 0 CODE 0 text25 dist/default/production\Projeto_3.X.production.o
+_LATD0 7C60 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_LATD1 7C61 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+?_sprintf 98 0 BANK0 1 cstackBANK0 dist/default/production\Projeto_3.X.production.o
+_PORTA F80 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_PORTB F81 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_PORTC F82 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_PORTD F83 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_PORTE F84 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_T0CON FD5 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_TMR0L FD6 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_TRISA F92 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_TRISB F93 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_TRISC F94 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_TRISD F95 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__end_of_putch 3AAA 0 CODE 0 text27 dist/default/production\Projeto_3.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\Projeto_3.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\Projeto_3.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\Projeto_3.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\Projeto_3.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\Projeto_3.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\Projeto_3.X.production.o
+atoi@neg E 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+_canal D2 0 BANK0 1 bssBANK0 dist/default/production\Projeto_3.X.production.o
+__size_ofi2_LCD_String 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+_flags D0 0 BANK0 1 bssBANK0 dist/default/production\Projeto_3.X.production.o
+_fputc 2F74 0 CODE 0 text26 dist/default/production\Projeto_3.X.production.o
+_fputs 379E 0 CODE 0 text25 dist/default/production\Projeto_3.X.production.o
+_putch 3AA8 0 CODE 0 text27 dist/default/production\Projeto_3.X.production.o
+_width CC 0 BANK0 1 bssBANK0 dist/default/production\Projeto_3.X.production.o
+floorf@F527 BA 0 BANK0 1 bssBANK0 dist/default/production\Projeto_3.X.production.o
+?_isdigit 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+?_isspace 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+?_isupper 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__size_of_pad 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+atoi@n 15 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+atoi@s 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+?_strncmp 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__initialization 3A22 0 CODE 0 cinit dist/default/production\Projeto_3.X.production.o
+___xxtofl@sign 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+_Config_ADCONS 3A94 0 CODE 0 text7 dist/default/production\Projeto_3.X.production.o
+__pbssBANK0 BA 0 BANK0 1 bssBANK0 dist/default/production\Projeto_3.X.production.o
+__pbssBANK1 100 0 BANK1 1 bssBANK1 dist/default/production\Projeto_3.X.production.o
+_LCD_Command 396E 0 CODE 0 text6 dist/default/production\Projeto_3.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\Projeto_3.X.production.o
+___wmul@product 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_3.X.production.o
+__Hsmallconst 82C 0 SMALLCONST 0 smallconst dist/default/production\Projeto_3.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\Projeto_3.X.production.o
+__size_of_LCD_Char 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__size_of_LCD_Init 0 0 ABS 0 - dist/default/production\Projeto_3.X.production.o
+__end_of_Conv_AD 2E9E 0 CODE 0 text9 dist/default/production\Projeto_3.X.production.o
+__end_ofi2_LCD_String 3614 0 CODE 0 text11 dist/default/production\Projeto_3.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Projeto_3.X.production.o
+__Hintcode E 0 CODE 0 intcode dist/default/production\Projeto_3.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text19 0 82C 82C 327E 1
+cstackCOMRAM 1 1 1 5E 1
+cstackBANK0 1 60 60 7E 1
+reset_vec 0 0 0 4 1
+bssBANK1 1 100 100 DB 1
+intcode 0 8 8 A 1
+smallconst 0 800 800 2C 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
